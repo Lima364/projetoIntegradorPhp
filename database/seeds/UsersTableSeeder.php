@@ -21,6 +21,7 @@ class UsersTableSeeder extends Seeder
         //         'remember_token' => 'okokdsds',
         //     ]
         // );
+        
         factory(\App\User::class, 40)->create();
 
     }
