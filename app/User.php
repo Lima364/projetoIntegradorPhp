@@ -37,3 +37,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 }
+
+    public function cupom_ofertado()
+        {
+            return $this->hasMany(Cupom_ofertado::class);
+        }
+    
+    public fuction user_cupomOfertado()
+        {
+            // return_$this->belongsToMany(Cupom_ofertado::class);
+            return $this->belongsToMany(Cupom_ofertado::class, ‘cupom_copiado_user_table’);
+     }
+
+    public function avaliar_cupom()
+        {
+            return $this->hasMany(Avaliar_cupom::class);
+        }
+
