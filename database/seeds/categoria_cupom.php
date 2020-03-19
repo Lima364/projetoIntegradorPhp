@@ -11,7 +11,7 @@ class categoria_cupom extends Seeder
      */
     public function run()
     {
-        //factory(\App\User::class, 40)->create();
+        //factory(\App\User::class, 20)->create();
         
     }
 }

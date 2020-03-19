@@ -8,6 +8,7 @@ class Cupom_ofertado extends Model
 {
     //
     protected $table = 'cupom_ofertado';
+    protected $fillable = ['imagem_cupom', 'descricao_cupom', 'codigo_desconto'];
 
     // public function empresa_promotora()
     // {
@@ -19,7 +20,7 @@ class Cupom_ofertado extends Model
         return $this->belongsTo(User::class);
     }
 
-    public fuction cupomOfertado_user()
+    public function cupomOfertado_user()
     {
         // return_$this->belongsToMany(User::class);
         return $this->belongsToMany(User::class, ‘cupom_copiado_user_table’);

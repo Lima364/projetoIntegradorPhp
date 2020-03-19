@@ -8,5 +8,5 @@ class Contato extends Model
 {
     //
     protected $table = 'contato';
-
+    protected $fillable = ['nome_contato', 'email', 'mensagem'];
 }

@@ -8,6 +8,8 @@ class Empresa_promotora extends Model
 {
     //
     protected $table = 'empresa_promotora';
+    protected $fillable = ['nome_empresa'];
+    
   
     public function categoria_cupom()
     {
