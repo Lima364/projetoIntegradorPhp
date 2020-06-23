@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class cupom_copiado extends Seeder
+class Cupom_copiado extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,7 @@ class cupom_copiado extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\Cupom_copiado::class, 20)->create();
+        
     }
 }

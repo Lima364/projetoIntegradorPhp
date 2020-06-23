@@ -23,6 +23,6 @@ class Cupom_ofertado extends Model
     public function cupomOfertado_user()
     {
         // return_$this->belongsToMany(User::class);
-        return $this->belongsToMany(User::class, ‘cupom_copiado_user_table’);
+        return $this->belongsToMany(User::class, 'cupom_copiado_user_table');
     }
 }

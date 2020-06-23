@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class categoria_cupom extends Seeder
+class Categoria_cupom extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,12 @@ class categoria_cupom extends Seeder
      */
     public function run()
     {
-        //factory(\App\User::class, 20)->create();
-        
+        factory(\App\Categoria_cupom::class, 20)->create();
+    
+        // factory(\App\Categoria_cupom::class, 20)->create()->each(function ($categoria_cupom)
+        // {
+        //     $user->empresa_promotora()->save(factory(\App\Empresa_promotora::class)->make());
+        // });
+     
     }
 }

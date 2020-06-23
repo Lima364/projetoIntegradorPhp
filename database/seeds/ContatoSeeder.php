@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class Avaliar_cupom extends Seeder
+class ContatoSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,8 +11,7 @@ class Avaliar_cupom extends Seeder
      */
     public function run()
     {
-        //
-        factory(\App\Avaliar_cupom::class, 20)->create();
-
+        factory(\App\Contato::class, 20)->create();
+        
     }
 }

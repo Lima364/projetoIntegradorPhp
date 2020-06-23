@@ -2,7 +2,7 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Avaliar_cupom;
 use Faker\Generator as Faker;
 
 $factory->define(\App\Avaliar_cupom::class, function (Faker $faker) {

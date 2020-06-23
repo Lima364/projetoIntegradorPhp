@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class contato extends Seeder
+class Contato extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +11,7 @@ class contato extends Seeder
      */
     public function run()
     {
-        //
+        factory(\App\Contato::class, 20)->create();
+        
     }
 }

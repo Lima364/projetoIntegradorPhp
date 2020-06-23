@@ -15,7 +15,10 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $fillable = [
+    protected $table = 'users';
+
+    protected $fillable =
+    [
         'name', 'email', 'password',
     ];
 
@@ -24,7 +27,8 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $hidden = [
+    protected $hidden =
+    [
         'password', 'remember_token',
     ];
 
@@ -33,24 +37,23 @@ class User extends Authenticatable
      *
      * @var array
      */
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-}
+    // protected $casts = [
+    //     'email_verified_at' => 'datetime',
+    // ];
 
     public function cupom_ofertado()
-        {
-            return $this->hasMany(Cupom_ofertado::class);
-        }
-    
-    public fuction user_cupomOfertado()
-        {
-            // return_$this->belongsToMany(Cupom_ofertado::class);
-            return $this->belongsToMany(Cupom_ofertado::class, ‘cupom_copiado_user_table’);
-     }
+    {
+        return $this->hasMany(Cupom_ofertado::class);
+    }
+
+    public function userCupomOfertado()
+    {
+        return $this->belongsToMany(Cupom_ofertado::class, 'cupom_copiado_user_table');
+    }
+    // return $this->belongsToMany(Cupom_ofertado::class);
 
     public function avaliar_cupom()
-        {
-            return $this->hasMany(Avaliar_cupom::class);
-        }
-
+    {
+        return $this->hasMany(Avaliar_cupom::class);
+    }
+}
