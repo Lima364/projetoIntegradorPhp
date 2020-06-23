@@ -8,7 +8,7 @@ class Contato extends Model
 {
     // use Notifiable;
     
-    //
+
     protected $table = 'contato';
     protected $fillable = ['nome_contato', 'email', 'mensagem'];
 }
